@@ -6,12 +6,12 @@
 	include_once ("veali/head.php");
 	switch ($_GET['page']) {
     case 'new':			
-		$new = articls_all($link, 'new');		
+		$new = articls_all($link, 'articl');		
 		if (!isset($_GET['id'])){
 			$new_1 = array_shift($new);
 			include ("veali/new.php");
 		}else{ 			
-			$good = sor($new, $_GET['id'], $_GET['page'].'_id');			
+			$good = sor($new, $_GET['id'], 'articl_id');			
 			include ("veali/newst.php");
 		}		
         break;
