@@ -44,10 +44,10 @@
 														<?php }?>														
 													</div>
 													<div class="news-data mb-5">
-														<p class="dark-grey-text"><strong><i class="fa fa-clock-o"></i><?=$new_1['new_data']?></strong></p>
+														<p class="dark-grey-text"><strong><i class="fa fa-clock-o"></i><?=$new_1['articl_data']?></strong></p>
 													</div>
-													 <h4 class="pt-4"><a class="text-dark" href="?page=new&id=<?=$new_1['new_id']?>"><strong><?=$new_1['new_title']?></strong></a></h3>
-													 <p align="justify"><?php echo mb_strimwidth($new_1['new_content'], 0, 249, "...")?></p>
+													 <h4 class="pt-4"><a class="text-dark" href="?page=new&id=<?=$new_1['articl_id']?>"><strong><?=$new_1['articl_title']?></strong></a></h3>
+													 <p align="justify"><?php echo mb_strimwidth($new_1['articl_content'], 0, 249, "...")?></p>
 												</div>
 											</div>
 											<div class="col-lg-6 col-md-12 list-group list-group-flush">

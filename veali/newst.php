@@ -30,21 +30,21 @@
 							<div class="container">
 								<div class="row">
 									<section class="magazine-section text-left">
-										<h2 class="h3 text-left my-2 font-weight-bold"><?=$good[0]['new_title']?></h2>
+										<h2 class="h3 text-left my-2 font-weight-bold"><?=$good[0]['articl_title']?></h2>
 										<div class="row text-left">
 											<div class="col-12">
 												<div class="single-news">
 													<div class="view overlay rounded z-depth-1-half mb-3 ">
-														<?php if (empty($good[0]['new_imags'])) {																		
+														<?php if (empty($good[0]['articl_imags'])) {																		
 																}else { ?>																																			
-																<img src="<?=$good[0]['new_imags']?>" class="img-fluid rounded" alt="Нет картинки">
+																<img src="<?=$good[0]['articl_imags']?>" class="img-fluid rounded" alt="Нет картинки">
 																<a><div class="mask rgba-white-slight"></div></a>
 														<?php }?>														
 													</div>
 													<div class="news-data mb-5">
-														<p class="dark-grey-text"><strong><i class="fa fa-clock-o"></i><?=$good[0]['new_data']?></strong></p>
+														<p class="dark-grey-text"><strong><i class="fa fa-clock-o"></i><?=$good[0]['articl_data']?></strong></p>
 													</div>													 
-													 <p align="justify"><?=$good[0]['new_content']?></p>
+													 <p align="justify"><?=$good[0]['articl_content']?></p>
 												</div>
 											</div>																					 
 										</div>										 
