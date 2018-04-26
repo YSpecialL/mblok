@@ -7,56 +7,12 @@
 <!--Footer-->
 <footer class="page-footer font-small mdb-color lighten-3 pt-4 mt-4">
 
-    <!--Footer Links-->
-    <div class="container text-center text-md-left">
-        <div class="row my-4">
-
-            <!--First column-->
-            
-            <!--/.First column-->
-
-            
-
-            <!--Second column-->
-            <div class="col-md-auto col-lg-auto ">                
-                <ul class="list-unstyled">
-                    <h5 class="text-uppercase mr-5 font-weight-bold">Полезные ссылки</h5>
-                    <p><a href="?page=kon">Контакты</a></p>
-					<p><a target="_blank" href="http://ternia.ru">Импульс</a></p>			
-                    
-                </ul>
-            </div>
-            <!--/.Second column-->
-
-            <hr class="clearfix w-100 d-md-none">
-
-            <!--Third column-->
-            <div class="col-md-auto col-lg-auto">                
-                <!--Info-->
-                <p><i class="fa fa-home mr-3"></i><b>Адрес:</b> РФ, 162130, Вологодская область, г. Сокол, ул. Советская, 71</p>
-                <p><i class="fa fa-envelope mr-3"></i>wodokanalgilservis@mail.ru</p>
-                <p><i class="fa fa-phone mr-3"></i>Круглосуточно, тел. 2-40-05</p>                
-            </div>
-            <!--/.Third column-->
-
-            <hr class="clearfix w-100 d-md-none">
-
-            <!--Fourth column-->
-            
-            <!--/.Fourth column-->
-
-        </div>
-    </div>
-    <!--/.Footer Links-->
+    
 
     <!--Copyright-->
     <div class="footer-copyright py-3 text-center">
-        © 2018 ООО 'Водоканалжилсервис'. Все права защищены.        
+        © 2018 Все права защищены.        
     </div>
     <!--/.Copyright-->
-<script>
 
-    document.getElementById('finevision-need-pay').remove()
-
-</script>
 </footer>
