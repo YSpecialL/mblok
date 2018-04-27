@@ -47,9 +47,9 @@
 												<!--Content column-->
 												<?php foreach($koment as $a): ?>												
 												<div class="col-sm-10 col-12">
-													<a>
+
 														<h4 class="font-weight-bold"><?=$a['koment_user']?></h4>
-													</a>
+													
 													<div class="mt-2">
 														<ul class="list-unstyled">
 															<li class="comment-date">
