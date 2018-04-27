@@ -33,14 +33,11 @@ function render($tenplate, $parame){
 	include ("../veali/{$tenplate}");	
 }
 
-function newst($link, $tbl, $title, $content, $img = '', $kategor = ''){
-	if(!$img == ''){		
-	$zbor = "INSERT INTO {$tbl} ({$tbl}_title, {$tbl}_content, {$tbl}_imags) VALUES ('{$title}', '{$content}', '{$img}')";
-	}elseif (!$kategor == '') { 
-		$zbor = "INSERT INTO {$tbl} ({$tbl}_title, {$tbl}_content, {$tbl}_kategor) VALUES ('{$title}', '{$content}', '{$kategor}')";	
-	}else {
-		$zbor = "INSERT INTO {$tbl} ({$tbl}_title, {$tbl}_content) VALUES ('{$title}', '{$content}')";
-	}
+function newst($link,$user, $koment, $articl_id){
+			
+	
+		$zbor = "INSERT INTO koment (koment_user, koment_content, koment_id_articl) VALUES ('{$user}', '{$koment}', '{$articl_id}')";
+	
 
 
 		
