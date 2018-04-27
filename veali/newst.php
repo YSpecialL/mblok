@@ -5,13 +5,17 @@
 		
 		<div class="container">
 			<div class="row">
-				<div class="col-12 rounded-top border">				
+				<div class="col-12 rounded-top ">				
 					<div class="tab-content">						
-						<div class="tab-pane active" id="news" role="tabpanel">
-							<div class="container">
-								<div class="row">
+						
+							
+									<nav class="breadcrumb">
+										<a class="h6 breadcrumb-item " href="/">Мой Блог</a>
+										<span class="breadcrumb-item active">Статья</span>
+										
+									</nav>
 									<section class="magazine-section text-left">
-										<h2 class="h3 text-left my-2 font-weight-bold"><?=$good[0]['articl_title']?></h2>
+										<h2 class="h3 text-left font-weight-bold"><?=$good[0]['articl_title']?></h2>
 										<div class="row text-left">
 											<div class="col-12">
 												<div class="single-news">
@@ -34,7 +38,7 @@
 
 										<!--Main wrapper-->
 										<div class="comments-list text-center text-md-left mb-5">
-											<div class="text-center mb-4">
+											<div class="text-center my-4">
 												<h3>Комментарии<span class="badge blue">Три</span>
 												</h3>
 											</div>
@@ -89,31 +93,7 @@
 												</div>
 												<!--Grid column-->
 
-												<!--Grid column-->
-												<div class="col-lg-4 col-md-6">
-
-													<div class="input-group md-form form-sm form-3 pl-0">
-														<div class="input-group-prepend">
-															<span class="input-group-text white grey-text" id="basic-addon10">2</span>
-														</div>
-														<input type="text" class="form-control form-control-sm mt-0 black-border rgba-white-strong" placeholder="Адрес эл. почты" aria-describedby="basic-addon10">
-													</div>
-
-												</div>
-												<!--Grid column-->
-
-												<!--Grid column-->
-												<div class="col-lg-4 col-md-6">
-
-													<div class="input-group md-form form-sm form-3 pl-0">
-														<div class="input-group-prepend">
-															<span class="input-group-text white grey-text" id="basic-addon101">3</span>
-														</div>
-														<input type="text" class="form-control form-control-sm mt-0 black-border rgba-white-strong" placeholder="Веб-сайт" aria-describedby="basic-1">
-													</div>
-
-												</div>
-												<!--Grid column-->
+												
 
 											</div>
 											<!--Grid row-->
@@ -138,9 +118,8 @@
 
 									</div></section>
 									</div>
-								</div>
-							</div>			
-						</div>
+									
+						
 					</div>
 				</div>
 			</div>
