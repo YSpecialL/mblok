@@ -1,6 +1,6 @@
 <?php
 
-function articls_all($link, $tbl, $sel = '*', $con = 'id', $id = '*', $sort = 'id', $pord = 'DESC')
+function articls_all($link, $tbl, $page = '1', $sel = '*', $con = 'id', $id = '*', $sort = 'id')
 {	
 
 $sort = ($tbl.'_'.$sort);
@@ -8,8 +8,15 @@ $sort = ($tbl.'_'.$sort);
 	$con = '';
 	}else { $con = ("WHERE {$tbl}_{$con} = '{$id}'");
 	}
-
-	$query = "SELECT $sel FROM $tbl $con ORDER BY $sort $pord";
+if ($page == '*') {
+	$page = '';
+	}else {
+		$offset = ((10 * $page) - 10);
+		$page = 'DESC LIMIT '.$offset.', 10';
+		
+		}
+	
+	$query = "SELECT $sel FROM $tbl $con ORDER BY $sort $page";
 	
 	$result = mysqli_query($link, $query);
 	
