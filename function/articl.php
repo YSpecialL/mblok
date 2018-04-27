@@ -36,12 +36,15 @@ function render($tenplate, $parame){
 function newst($link,$user, $koment, $articl_id){
 			
 	
-		$zbor = "INSERT INTO koment (koment_user, koment_content, koment_id_articl) VALUES ('{$user}', '{$koment}', '{$articl_id}')";
+		$t = "INSERT INTO koment (koment_user, koment_content, koment_id_articl) VALUES ('%s', '%s', '%s')";
 	
 
-
+	$query = sprintf($t,
+		mysqli_real_escape_string($link, $user),
+		mysqli_real_escape_string($link, $koment),
+		mysqli_real_escape_string($link, $articl_id));
 		
-			$result = mysqli_query($link, $zbor);
+			$result = mysqli_query($link, $query);
 		
 			if (!$result)
 				die(mysqli_error($link));
