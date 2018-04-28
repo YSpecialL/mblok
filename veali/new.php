@@ -31,20 +31,24 @@
 								<ul class="pagination justify-content-center">									
 									
 									<!--Previous button-->
-									<li class="page-item <? if ($page == 1):?> disabled <?endif?>"><a class="page-link" href="?page=<?=($page - 1)?>" >Предыдущая страница</a></li>
+									<li class="page-item <? if ($page <= 1):?> disabled <?endif?>"><a class="page-link" href="?page=<?=($page - 1)?>" >Предыдущая страница</a></li>
 
 									<!--Numbers-->
-									<li class="page-item <? if ($page == 1 ) :?>active disabled"><a class="page-link" href="?page=1">1</a>
-														<?else :?> "><a class="page-link" href="?page=<?=($page - 1)?>"><?=($page - 1)?></a>
+									<li class="page-item <? if ($page == 1) :?>active disabled"><a class="page-link" href="?page=<?=$page?>"><?=$page?></a>
+														<?elseif ($page == $pagemax) :?> "><a class="page-link" href="?page=<?=($page - 2)?>"><?=($page - 2)?></a>
+														<?else:?> "><a class="page-link" href="?page=<?=($page - 1)?>"><?=($page - 1)?></a>
 														<?endif?>
 									</li>
-									<li class="page-item <? if ($page < $pagemax and $page > 1):?> active disabled"><a class="page-link" href="?page=<?=$page?>"><?=$page?></a>
-														<?elseif ($page == 1) :?> "><a class="page-link" href="?page=<?=($page + 1)?>"><?=($page + 1)?></a>
+									<li class="page-item <? if ($page == 1) :?>"><a class="page-link" href="?page=<?=($page + 1)?>"><?=($page + 1)?></a>
+														<?elseif ($page == $pagemax) :?> "><a class="page-link" href="?page=<?=($page - 1)?>"><?=($page - 1)?></a>
+														<?else:?> active disabled"><a class="page-link" href="?page=<?=$page?>"><?=$page?></a>
 														<?endif?>
 									
 									</li>
-									<li class="page-item <? if ($page == $pagemax):?> active disabled <?endif?>"><a class="page-link"href="?page=<?=($page + 1)?>">3</a></li>
-									
+									<li class="page-item <? if ($page == $pagemax) :?>active disabled"><a class="page-link" href="?page=<?=$page?>"><?=$page?></a>
+														<?elseif ($page == 1) :?> "><a class="page-link" href="?page=<?=($page + 2)?>"><?=($page + 2)?></a>
+														<?else:?> "><a class="page-link" href="?page=<?=($page + 1)?>"><?=($page + 1)?></a>
+														<?endif?>
 									<!--Next button-->
 									<li class="page-item <? if ($page == $pagemax):?> disabled <?endif?>"><a class="page-link" href="?page=<?=($page + 1)?>">Далее</a>
 									</li>
